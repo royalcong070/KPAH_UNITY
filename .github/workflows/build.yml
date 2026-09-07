@@ -1,0 +1,34 @@
+name: Build KPAH APK
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Free disk space
+        run: |
+          sudo rm -rf /usr/share/dotnet
+          sudo rm -rf /opt/ghc
+          sudo rm -rf /usr/local/share/boost
+
+      - name: Build Android APK
+        uses: game-ci/unity-builder@v4
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+        with:
+          targetPlatform: Android
+          unityVersion: 2021.3.45f1
+          buildMethod: BuildScript.BuildAPK
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: KPAH-APK
+          path: build/
+          retention-days: 7

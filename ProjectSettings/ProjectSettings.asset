@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!129 &1
+PlayerSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 23
+  productGUID: 00000000000000000000000000000000
+  AndroidProfiler: 0
+  AndroidFilterTouchesWhenObscured: 0
+  AndroidEnableSustainedPerformanceMode: 0
+  AndroidUseLegacyExternalStorage: 0
+  androidStartInFullscreen: 1
+  AndroidRequiresUserAuthorizationForLocation: 0
+  productName: KPAH_Offline
+  companyName: KPAH
+  defaultScreenOrientation: 3
+  allowedAutorotateToPortrait: 1
+  allowedAutorotateToPortraitUpsideDown: 1
+  allowedAutorotateToLandscapeRight: 1
+  allowedAutorotateToLandscapeLeft: 1
+  bundleVersion: 2.75.0
+  AndroidBundleVersionCode: 275
+  AndroidMinSdkVersion: 19
+  AndroidTargetSdkVersion: 30
+  AndroidPreferredInstallLocation: 1
+  AndroidForceInternetPermission: 0
+  AndroidForceSDCardPermission: 0
+  stripEngineCode: 1
+  useDeterministicCompression: 1
+  IL2CPPEnabled: 0
+  scriptingBackend: 0
+  scriptCompilationTimeout: 20
+  apiCompatibilityLevelPerPlatform: {}
+  m_RenderingPath: 1
+  m_MobileRenderingPath: 1
